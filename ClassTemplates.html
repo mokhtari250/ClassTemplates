@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+template <class T>
+class Mehdi{
+    T first, second;
+    public:
+        Mehdi(T a, T b) {
+            first=a;
+            second=b;
+        }
+        T bigger();
+};
+
+tamplete <class T>
+T Mehdi<T>::bigger(){
+    return (first>second?first:second);
+}
+
+int main () {
+    Mehdi <int> mo(258, 105);
+    cout << mo.bigger();
+}
